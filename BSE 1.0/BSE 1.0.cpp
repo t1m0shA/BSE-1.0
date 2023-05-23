@@ -78,3 +78,17 @@ void inverseMainDiagonal(float** array, int size) {
         array[size - i - 1][size - i - 1] = temp;
     }
 }
+
+float minOfSting(float *array, int size){
+
+    float min = array[0];
+
+    for (int i = 1; i < size; i++)
+    {
+        if (array[i] < min)
+        {
+            min = array[i];
+        }
+    }
+    return min;
+}
