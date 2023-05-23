@@ -92,3 +92,25 @@ float minOfSting(float *array, int size){
     }
     return min;
 }
+
+void findMinInSelectedArea(float** array, int size) {
+
+
+    float minimum = INT_MAX;
+    int bound = 0;
+    for (int i = size - 1; i > size / 2 - 1; i--)
+    {
+        for (int j = bound; j < size - bound; j++)
+        {
+
+            if (array[i][j] < minimum && array[i][j] > 0)
+            {
+                minimum = array[i][j];
+            }
+
+        }
+        bound++;
+    }
+    cout << "\nMinimum: " << minimum;
+
+}
