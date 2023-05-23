@@ -4,7 +4,32 @@
 
 using namespace std;
 
+int main() {
 
+    int size;
+    cout << "Enter matrix size: ";
+    cin >> size;
+
+    float** array = new float* [size];
+
+    initializeArray(array, size);
+
+    createMatrix(array, size);
+
+    display(array, 3, size);
+
+    findMinValue(array, size);
+
+    display(array, 6, size);
+
+    inverseMainDiagonal(array, size);
+
+    display(array, 6, size);
+
+    findMinInSelectedArea(array, size);
+
+    clearArray(array, size);
+}
 
 
 
