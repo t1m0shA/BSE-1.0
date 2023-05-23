@@ -1,8 +1,17 @@
 #include <iostream>
 #include <iomanip>
 
-
 using namespace std;
+
+void initializeArray(float**, int);
+void createMatrix(float**, int);
+float minOfSting(float*, int);
+void findMinValue(float**, int);
+void inverseMainDiagonal(float**, int);
+void display(float**, int, int);
+void initializeArray(float**, int);
+void clearArray(float**, int);
+void findMinInSelectedArea(float**, int);
 
 int main() {
 
@@ -30,20 +39,6 @@ int main() {
 
     clearArray(array, size);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 void initializeArray(float** array, int size) {
 
