@@ -114,3 +114,12 @@ void findMinInSelectedArea(float** array, int size) {
     cout << "\nMinimum: " << minimum;
 
 }
+
+void clearArray(float **array, int size){
+
+    for (int i = 0; i < size; i++)
+    {
+        delete [] array[i];
+    }
+    delete [] array;
+}
