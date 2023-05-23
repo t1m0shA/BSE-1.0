@@ -51,3 +51,19 @@ void display(float **array, int width, int size){
     }
     cout << "\n\n";
 }
+
+
+
+void findMinValue(float **array, int size){
+
+    float minEl;
+    for (int i = 0; i < size; i++)
+    { 
+        minEl = minOfSting(array[i], size);
+        for (int j = 0; j < size; j++)
+        {
+            array[i][j] /= minEl;
+            array[i][j] = int(array[i][j]*100)/100.0;
+        }
+    }
+}
