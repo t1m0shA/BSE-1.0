@@ -38,3 +38,16 @@ void createMatrix(float** array, int size) {
         }
     }
 }
+
+void display(float **array, int width, int size){
+
+    for (size_t i = 0; i < size; i++)
+    {
+        for (size_t j = 0; j < size; j++)
+        {
+            cout << setw(width) << array[i][j] << " ";
+        }
+        cout << "\n";
+    }
+    cout << "\n\n";
+}
