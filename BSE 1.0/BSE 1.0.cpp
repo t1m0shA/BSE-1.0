@@ -67,3 +67,14 @@ void findMinValue(float **array, int size){
         }
     }
 }
+
+void inverseMainDiagonal(float** array, int size) {
+
+    float temp;
+    for (int i = 0; i < (int)size / 2; i++)
+    {
+        temp = array[i][i];
+        array[i][i] = array[size - 1 - i][size - 1 - i];
+        array[size - i - 1][size - i - 1] = temp;
+    }
+}
